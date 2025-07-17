@@ -47,7 +47,8 @@ Route::middleware('auth')->group(function () {
 
 // Grup Rute untuk fitur Admin lainnya
 Route::middleware(['auth'])->prefix('admin')->name('admin.')->group(function () {
-    Route::resource('berita', BeritaController::class);
+    Route::resource('berita', BeritaController::class)
+        ->parameters(['berita' => 'berita']);
     Route::resource('proker', ProkerController::class);
     Route::resource('galeri', GaleriController::class);
     Route::resource('anggota', AnggotaController::class);

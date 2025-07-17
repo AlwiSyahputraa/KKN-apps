@@ -36,7 +36,7 @@ class AuthServiceProvider extends ServiceProvider
 
         // Izin untuk mengelola konten (PDD)
         Gate::define('manage-konten', function (User $user) {
-            return $user->role === 'pdd';
+            return $user->role === ['admin','pdd'];
         });
         
         // Izin untuk mengelola keuangan (Bendahara)

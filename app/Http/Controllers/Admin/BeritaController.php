@@ -1,11 +1,9 @@
 <?php
 // ======================================================================
-// KODE CONTROLLER
-// Lokasi: app/Http/Controllers/Admin/
+// LANGKAH 2: Pastikan BeritaController Sudah Benar
+// FILE: app/Http/Controllers/Admin/BeritaController.php
+// LOKASI: Ganti seluruh isi file ini dengan kode di bawah.
 // ======================================================================
-
-// FILE: BeritaController.php
-// PASTIKAN ANDA MEMBUKA FILE INI DAN MENGISINYA DENGAN KODE DI BAWAH
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
