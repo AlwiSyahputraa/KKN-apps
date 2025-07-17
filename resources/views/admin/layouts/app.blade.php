@@ -167,11 +167,13 @@
             @elseif (Auth::user()->role == 'pdd')
                 <li class="nav-item"><a href="{{ route('admin.berita.index') }}" class="nav-link text-white"><i class="fa fa-newspaper me-2"></i> <span class="menu-text">Berita</span></a></li>
                 <li class="nav-item"><a href="{{ route('admin.galeri.index') }}" class="nav-link text-white"><i class="fa fa-images me-2"></i> <span class="menu-text">Galeri</span></a></li>
+                <li class="nav-item"><a href="{{ route('admin.dokumen.index') }}" class="nav-link text-white"><i class="fa fa-file-alt me-2"></i> <span class="menu-text">Arsip Dokumen</span></a></li>
                 <li class="nav-item"><a href="{{ route('admin.keuangan.index') }}" class="nav-link text-white"><i class="fa fa-wallet me-2"></i> <span class="menu-text">Laporan Keuangan</span></a></li>
 
             @elseif (Auth::user()->role == 'bendahara')
                 <li class="nav-item"><a href="{{ route('admin.keuangan.index') }}" class="nav-link text-white"><i class="fa fa-wallet me-2"></i> <span class="menu-text">Laporan Keuangan</span></a></li>
                 <li class="nav-item"><a href="{{ route('admin.permintaan.index') }}" class="nav-link text-white"><i class="fa fa-qrcode me-2"></i> <span class="menu-text">Permintaan Bayar</span></a></li>
+                <li class="nav-item"><a href="{{ route('admin.dokumen.index') }}" class="nav-link text-white"><i class="fa fa-file-alt me-2"></i> <span class="menu-text">Arsip Dokumen</span></a></li>
 
             @elseif (Auth::user()->role == 'sekretaris')
                 <li class="nav-item"><a href="{{ route('admin.dokumen.index') }}" class="nav-link text-white"><i class="fa fa-file-alt me-2"></i> <span class="menu-text">Arsip Dokumen</span></a></li>
@@ -185,6 +187,7 @@
                     </a>
                 </li>
                 <li class="nav-item"><a href="{{ route('admin.keuangan.index') }}" class="nav-link text-white"><i class="fa fa-wallet me-2"></i> <span class="menu-text">Laporan Keuangan</span></a></li>
+                <li class="nav-item"><a href="{{ route('admin.dokumen.index') }}" class="nav-link text-white"><i class="fa fa-file-alt me-2"></i> <span class="menu-text">Arsip Dokumen</span></a></li>
 
             @elseif (Auth::user()->role == 'acara')
                 <li class="nav-item">
@@ -193,10 +196,13 @@
                     </a>
                 </li
                 <li class="nav-item"><a href="{{ route('admin.keuangan.index') }}" class="nav-link text-white"><i class="fa fa-wallet me-2"></i> <span class="menu-text">Laporan Keuangan</span></a></li>
+                <li class="nav-item"><a href="{{ route('admin.dokumen.index') }}" class="nav-link text-white"><i class="fa fa-file-alt me-2"></i> <span class="menu-text">Arsip Dokumen</span></a></li>
 
             @elseif (Auth::user()->role == 'peralatan')
                 <li class="nav-item"><a href="{{ route('admin.inventaris.index') }}" class="nav-link text-white {{ request()->routeIs('admin.inventaris.*') ? 'active' : '' }}"><i class="fa fa-box me-2"></i><span class="menu-text">Inventaris Barang</span></a></li>
                 <li class="nav-item"><a href="{{ route('admin.keuangan.index') }}" class="nav-link text-white"><i class="fa fa-wallet me-2"></i> <span class="menu-text">Laporan Keuangan</span></a></li>
+                <li class="nav-item"><a href="{{ route('admin.dokumen.index') }}" class="nav-link text-white"><i class="fa fa-file-alt me-2"></i> <span class="menu-text">Arsip Dokumen</span></a></li>
+                
             @elseif (Auth::user()->role == 'konsumsi')
                 <li class="nav-item"><a href="{{ route('admin.keuangan.index') }}" class="nav-link text-white"><i class="fa fa-wallet fa-fw me-2"></i><span class="menu-text">Laporan Keuangan</span></a></li>
                     <li class="nav-item"><a href="{{ route('admin.dokumen.index') }}" class="nav-link text-white"><i class="fa fa-file-alt fa-fw me-2"></i><span class="menu-text">Arsip Dokumen</span></a></li>
