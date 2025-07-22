@@ -5,15 +5,19 @@
 // DESKRIPSI: Memperbaiki logika untuk menampilkan logo.
 // ======================================================================
 ?>
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top py-2">
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top py-2 ">
     <div class="container">
         <a class="navbar-brand" href="{{ url('/') }}">
             <div class="d-flex align-items-center">
                 {{-- Diperbaiki: Logika untuk menampilkan logo cadangan --}}
                 <img src="{{ asset($appSettings['logo_path'] ?? '') ?: 'https://placehold.co/100x60/0B2447/FFFFFF?text=Logo' }}" alt="Logo KKN" style="height: 50px;" class="me-2">
                 <div>
-                    <h6 class="mb-0 fw-bold" style="color: #0B2447; font-size: 1rem;">KKN DESA NDOKUM SIROGA</h6>
-                    <small class="text-muted" style="font-size: 0.7rem;">UNIVERSITAS ISLAM NEGERI SUMATERA UTARA</small>
+<h6 class="mb-0 fw-bold text-uppercase" style="color: #0B2447; font-size: 1rem; letter-spacing: 0.5px;">
+    KKN DESA NDOKUM SIROGA
+</h6>
+<small class="text-muted" style="font-size: 0.75rem; letter-spacing: 0.5px;">
+    UNIVERSITAS ISLAM NEGERI SUMATERA UTARA
+</small>
                 </div>
             </div>
         </a>

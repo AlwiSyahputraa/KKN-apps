@@ -6,7 +6,7 @@
     {{-- Bagian Deskripsi & Peta --}}
     <div class="row g-5 mb-5">
         <div class="col-lg-7">
-            <h2 class="fw-bold section-title d-inline-block">Profil Desa Sukamaju</h2>
+            <h2 class="fw-bold section-title d-inline-block">Profil Desa Ndokum Siroga</h2>
             <p class="text-muted" style="text-align: justify;">
                 {{ $appSettings['deskripsi_desa'] ?? 'Deskripsi desa belum diatur.' }}
             </p>
@@ -29,7 +29,7 @@
 
     {{-- Bagian Anggota --}}
     <div class="text-center mb-5">
-        <h2 class="fw-bold section-title d-inline-block">Tim KKN Desa Sukamaju</h2>
+        <h2 class="fw-bold section-title d-inline-block">Tim KKN Desa Ndokum Siroga</h2>
         <p class="text-muted">Anggota Kelompok di Balik Pengabdian</p>
     </div>
 

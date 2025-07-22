@@ -5,6 +5,21 @@
 // LOKASI: Ganti isi file ini.
 // ======================================================================
 ?>
+<style>
+    .carousel-caption h1,
+.carousel-caption p {
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+.hero-carousel-item {
+    height: 100vh;
+    min-height: 500px;
+}
+.hero-carousel-item .carousel-caption {
+    transition: all 0.5s ease-in-out;
+}
+
+</style>
+
 <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
         @foreach($items as $key => $item)

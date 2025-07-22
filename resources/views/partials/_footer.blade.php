@@ -3,9 +3,9 @@
         <div class="row gy-5">
 
             <div class="col-lg-4 col-md-10">
-                <h5 class="text-uppercase mb-4 fw-bold footer-heading">KKN Desa Sukamaju</h5>
+                <h5 class="text-uppercase mb-4 fw-bold footer-heading">KKN Desa Ndokum Siroga</h5>
                 <p class="text-white-50">
-                    Website resmi Kelompok KKN Desa Sukamaju yang memuat informasi kegiatan, dokumentasi, dan program kerja.
+                    Website resmi Kelompok KKN Desa Ndokum Siroga yang memuat informasi kegiatan, dokumentasi, dan program kerja.
                 </p>
             </div>
 
